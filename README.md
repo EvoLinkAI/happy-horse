@@ -64,16 +64,16 @@ How does Happy Horse stack up against other leading AI video generation models?
 | Model | Provider | T2V | I2V | Audio | Max Res | FPS | $/sec | API | Open Weights |
 |-------|----------|:---:|:---:|:-----:|---------|:---:|------:|:---:|:------------:|
 | Happy Horse 1.0 | Alibaba ATH | Yes | Yes | Yes | 1080p | 24 | TBD | Yes | Unconfirmed |
-| Seedance 2.0 | ByteDance | Yes | Yes | No | 1080p | 24 | $0.08 | Yes | No |
+| [Seedance 2.5 Early Access](https://evolink.ai/launch/seedance-2-5?utm_source=github&utm_medium=readme&utm_campaign=happyhorse-1.0) | ByteDance | Yes | Yes | No | 1080p | 24 | current Seedance 2 API path | Yes | No |
 | Kling 1.6 | Kuaishou | Yes | Yes | No | 1080p | 30 | $0.07 | Yes | No |
 | Runway Gen-4 | Runway | Yes | Yes | No | 1080p | 24 | $0.05 | Yes | No |
 | Pika 2.2 | Pika | Yes | Yes | No | 1080p | 24 | $0.06 | Yes | No |
 
-T2V = text-to-video, I2V = image-to-video. Full structured data: [`benchmarks/models.json`](benchmarks/models.json)
+T2V = text-to-video, I2V = image-to-video. Full structured data: `benchmarks/models.json`
 
 ## Video Sample Gallery
 
-We use a set of [standardized prompts](samples/prompts.json) to compare output quality across models. Each prompt tests a specific capability:
+We use a set of standardized prompts to compare output quality across models. Each prompt tests a specific capability:
 
 | Prompt | Tests | Difficulty |
 |--------|-------|:----------:|
@@ -83,7 +83,7 @@ We use a set of [standardized prompts](samples/prompts.json) to compare output q
 | Portrait with head turn and smile | Facial expressions, subtle motion | Hard |
 | Coffee being poured with steam | Fluid dynamics, light interaction | Medium |
 
-*Side-by-side comparison GIFs will be added as models are tested. See [`samples/`](samples/) for details.*
+*Side-by-side comparison GIFs will be added as models are tested.*
 
 ## Creation Guide
 
@@ -166,7 +166,7 @@ Use **first-frame mode** when the opening shot must match your source image exac
 - **E-commerce ads**: product demos, digital spokesperson videos, scalable creative production
 - **Social content**: stylized short clips, memes, product seeding, image-to-video remixing
 
-Full platform walkthrough, prompt examples, and Chinese usage guide: [`happyhorse-master/guide.md`](happyhorse-master/guide.md)
+Full platform walkthrough, prompt examples, and Chinese usage guide: `happyhorse-master/guide.md`
 
 ## Running the Scripts
 
@@ -193,14 +193,14 @@ python compare.py --dry-run -m happyhorse-1.0,seedance-2.0 -p "prompt"  # previe
 python compare.py -m happyhorse-1.0,seedance-2.0,kling-1.6 -p "prompt"   # run comparison
 ```
 
-See [`scripts/README.md`](scripts/README.md) for full documentation and how to add new models.
+See `scripts/README.md` for full documentation and how to add new models.
 
 ## Trending Context & Community Signals
 
 For background on why Happy Horse is trending and detailed social media signal tracking:
 
-- [Trending Context](docs/trending-context.md) — Latest 24h update, source map, why it's trending, current status
-- [Community Signals](docs/community-signals.md) — Signal snapshot, X/Twitter analysis, Reddit discussion
+- Trending Context — Latest 24h update, source map, why it's trending, current status
+- Community Signals — Signal snapshot, X/Twitter analysis, Reddit discussion
 
 ## Happy Horse 1.0 Benchmarks
 
